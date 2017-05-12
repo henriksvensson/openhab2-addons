@@ -29,9 +29,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.config.core:0.9.0.201704291826">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.config.core:0.9.0.201705120951">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.config.core/0.9.0.201704291826/org.eclipse.smarthome.config.core-0.9.0.201704291826.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.config.core/0.9.0.201705120951/org.eclipse.smarthome.config.core-0.9.0.201705120951.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -65,9 +65,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.core:0.9.0.201704291826">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.core:0.9.0.201705120951">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.core/0.9.0.201704291826/org.eclipse.smarthome.core-0.9.0.201704291826.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.core/0.9.0.201705120951/org.eclipse.smarthome.core-0.9.0.201705120951.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -92,9 +92,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.core.thing:0.9.0.201704291826">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.core.thing:0.9.0.201705120951">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.core.thing/0.9.0.201704291826/org.eclipse.smarthome.core.thing-0.9.0.201704291826.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.core.thing/0.9.0.201705120951/org.eclipse.smarthome.core.thing-0.9.0.201705120951.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -110,9 +110,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.io.console:0.9.0.201704291826">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.smarthome.io.console:0.9.0.201705120951">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.io.console/0.9.0.201704291826/org.eclipse.smarthome.io.console-0.9.0.201704291826.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.smarthome.io.console/0.9.0.201705120951/org.eclipse.smarthome.io.console-0.9.0.201705120951.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
