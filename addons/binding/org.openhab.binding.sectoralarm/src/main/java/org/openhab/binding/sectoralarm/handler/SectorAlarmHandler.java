@@ -8,7 +8,7 @@
  */
 package org.openhab.binding.sectoralarm.handler;
 
-import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.*;
+import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.CHANNEL_TEMPERATURE;
 
 import org.eclipse.smarthome.core.thing.ChannelUID;
 import org.eclipse.smarthome.core.thing.Thing;
@@ -34,7 +34,8 @@ public class SectorAlarmHandler extends BaseThingHandler {
 
     @Override
     public void handleCommand(ChannelUID channelUID, Command command) {
-        if (channelUID.getId().equals(CHANNEL_1)) {
+        logger.debug("Channel message received.");
+        if (channelUID.getId().equals(CHANNEL_TEMPERATURE)) {
             // TODO: handle command
 
             // Note: if communication with thing fails for some reason,

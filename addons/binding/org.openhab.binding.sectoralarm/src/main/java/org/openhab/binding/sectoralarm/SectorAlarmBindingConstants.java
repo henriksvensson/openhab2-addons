@@ -21,9 +21,10 @@ public class SectorAlarmBindingConstants {
     private static final String BINDING_ID = "sectoralarm";
 
     // List of all Thing Type UIDs
-    public static final ThingTypeUID THING_TYPE_SAMPLE = new ThingTypeUID(BINDING_ID, "sample");
+    public static final ThingTypeUID THING_TYPE_THERMOMETER = new ThingTypeUID(BINDING_ID, "thermometer");
 
     // List of all Channel ids
-    public static final String CHANNEL_1 = "channel1";
+    public static final String CHANNEL_TIMESTAMP = "timestamp";
+    public static final String CHANNEL_TEMPERATURE = "temperature";
 
 }

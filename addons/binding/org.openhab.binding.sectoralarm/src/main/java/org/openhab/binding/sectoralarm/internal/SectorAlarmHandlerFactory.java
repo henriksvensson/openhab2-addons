@@ -8,16 +8,17 @@
  */
 package org.openhab.binding.sectoralarm.internal;
 
-import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.*;
+import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.THING_TYPE_THERMOMETER;
 
-import java.util.Collections;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-import org.openhab.binding.sectoralarm.handler.SectorAlarmHandler;
 import org.eclipse.smarthome.core.thing.Thing;
 import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
+import org.openhab.binding.sectoralarm.handler.SectorAlarmHandler;
 
 /**
  * The {@link SectorAlarmHandlerFactory} is responsible for creating things and thing
@@ -27,7 +28,8 @@ import org.eclipse.smarthome.core.thing.binding.ThingHandler;
  */
 public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
 
-    private static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Collections.singleton(THING_TYPE_SAMPLE);
+    private static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Stream.of(THING_TYPE_THERMOMETER)
+            .collect(Collectors.toSet());
 
     @Override
     public boolean supportsThingType(ThingTypeUID thingTypeUID) {
@@ -38,7 +40,7 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
     protected ThingHandler createHandler(Thing thing) {
         ThingTypeUID thingTypeUID = thing.getThingTypeUID();
 
-        if (thingTypeUID.equals(THING_TYPE_SAMPLE)) {
+        if (thingTypeUID.equals(THING_TYPE_THERMOMETER)) {
             return new SectorAlarmHandler(thing);
         }
 
