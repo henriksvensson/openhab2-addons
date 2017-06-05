@@ -14,6 +14,8 @@ package org.openhab.binding.rfxcom.internal.config;
  * @author Pauli Anttila - Initial contribution
  */
 public class RFXComBridgeConfiguration {
+    public static final String SERIAL_PORT = "serialPort";
+    public static final String BRIDGE_ID = "bridgeId";
 
     // Serial port for manual configuration
     public String serialPort;
@@ -28,6 +30,11 @@ public class RFXComBridgeConfiguration {
     public int port;
 
     public String transceiverType;
+
+    // Prevent unknown devices from being added to the inbox
+    public boolean disableDiscovery;
+
+    public int transmitPower;
 
     // Won't configure protocols to RFXCOM transceiver
     public boolean ignoreConfig;
@@ -46,6 +53,7 @@ public class RFXComBridgeConfiguration {
     public boolean enableBlindsT1T2T3T4;
     public boolean enableBlindsT0;
     public boolean enableProGuard;
+    public boolean enableFS20;
     public boolean enableLaCrosse;
     public boolean enableHidekiUPM;
     public boolean enableADLightwaveRF;
@@ -58,4 +66,6 @@ public class RFXComBridgeConfiguration {
     public boolean enableAC;
     public boolean enableARC;
     public boolean enableX10;
+    public boolean enableHomeConfort;
+    public boolean enableKEELOQ;
 }

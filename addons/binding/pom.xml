@@ -22,9 +22,11 @@
     <module>org.openhab.binding.atlona</module>
     <module>org.openhab.binding.autelis</module>
     <module>org.openhab.binding.avmfritz</module>
+    <module>org.openhab.binding.bigassfan</module>
     <module>org.openhab.binding.boschindego</module>
     <module>org.openhab.binding.chromecast</module>
     <module>org.openhab.binding.coolmasternet</module>
+    <module>org.openhab.binding.dlinksmarthome</module>
     <module>org.openhab.binding.dscalarm</module>
     <module>org.openhab.binding.exec</module>
     <module>org.openhab.binding.feed</module>
@@ -65,6 +67,7 @@
     <module>org.openhab.binding.silvercrestwifisocket</module>
     <module>org.openhab.binding.smaenergymeter</module>
     <module>org.openhab.binding.squeezebox</module>
+    <module>org.openhab.binding.synopanalyzer</module>
     <module>org.openhab.binding.systeminfo</module>
     <module>org.openhab.binding.systeminfo.test</module>
     <module>org.openhab.binding.tellstick</module>

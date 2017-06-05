@@ -27,23 +27,12 @@ public class RFXComBindingConstants {
 
     public static final String BINDING_ID = "rfxcom";
 
-    public static final String SERIAL_PORT = "serialPort";
-    public static final String BRIDGE_ID = "bridgeId";
-    public static final String DEVICE_ID = "deviceId";
-    public static final String SUB_TYPE = "subType";
-
     // List of all Bridge Type UIDs
     public static final String BRIDGE_TYPE_MANUAL_BRIDGE = "bridge";
     public static final String BRIDGE_TYPE_TCP_BRIDGE = "tcpbridge";
     public static final String BRIDGE_TYPE_RFXTRX433 = "RFXtrx433";
     public static final String BRIDGE_TYPE_RFXTRX315 = "RFXtrx315";
     public static final String BRIDGE_TYPE_RFXREC433 = "RFXrec433";
-
-    // Transceiver types
-    public static final String TRANSCEIVER_310MHZ = "310MHz";
-    public static final String TRANSCEIVER_315MHZ = "315MHz";
-    public static final String TRANSCEIVER_433_92MHZ = "433.92MHz";
-    public static final String RECEIVER_433_92MHZ = "433.92MHz receiver only";
 
     public static final ThingTypeUID BRIDGE_MANUAL = new ThingTypeUID(BINDING_ID, BRIDGE_TYPE_MANUAL_BRIDGE);
     public static final ThingTypeUID BRIDGE_TCP = new ThingTypeUID(BINDING_ID, BRIDGE_TYPE_TCP_BRIDGE);
@@ -68,9 +57,11 @@ public class RFXComBindingConstants {
     public static final String CHANNEL_RAW_PAYLOAD = "rawPayload";
     public static final String CHANNEL_SHUTTER = "shutter";
     public static final String CHANNEL_COMMAND = "command";
+    public static final String CHANNEL_COMMAND_ID = "commandId";
     public static final String CHANNEL_MOOD = "mood";
     public static final String CHANNEL_SIGNAL_LEVEL = "signalLevel";
     public static final String CHANNEL_DIMMING_LEVEL = "dimmingLevel";
+    public static final String CHANNEL_UV = "uv";
     public static final String CHANNEL_TEMPERATURE = "temperature";
     public static final String CHANNEL_HUMIDITY = "humidity";
     public static final String CHANNEL_HUMIDITY_STATUS = "humidityStatus";
@@ -94,9 +85,13 @@ public class RFXComBindingConstants {
     public static final String CHANNEL_STATUS = "status";
     public static final String CHANNEL_MOTION = "motion";
     public static final String CHANNEL_CONTACT = "contact";
+    public static final String CHANNEL_CONTACT_1 = "contact1";
+    public static final String CHANNEL_CONTACT_2 = "contact2";
+    public static final String CHANNEL_CONTACT_3 = "contact3";
     public static final String CHANNEL_VOLTAGE = "voltage";
     public static final String CHANNEL_SET_POINT = "setpoint";
     public static final String CHANNEL_DATE_TIME = "dateTime";
+    public static final String CHANNEL_CHIME_SOUND = "chimeSound";
 
     // List of all Thing Type UIDs
     private static final ThingTypeUID THING_TYPE_BAROMETRIC = new ThingTypeUID(BINDING_ID, "barometric");

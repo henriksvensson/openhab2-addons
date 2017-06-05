@@ -77,8 +77,7 @@ public class RFXComHandler extends BaseThingHandler implements DeviceMessageList
                     RFXComValueSelector valSelector = RFXComValueSelector.getValueSelector(channelUID.getId());
 
                     if (supportedValueSelectors.contains(valSelector)) {
-                        msg.setSubType(msg.convertSubType(config.subType));
-                        msg.setDeviceId(config.deviceId);
+                        msg.setConfig(config);
                         msg.convertFromState(valSelector, command);
 
                         bridgeHandler.sendMessage(msg);
@@ -173,11 +172,26 @@ public class RFXComHandler extends BaseThingHandler implements DeviceMessageList
                                 case CHILL_FACTOR:
                                     updateState(CHANNEL_CHILL_FACTOR, message.convertToState(valueSelector));
                                     break;
+                                case CHIME_SOUND:
+                                    updateState(CHANNEL_CHIME_SOUND, message.convertToState(valueSelector));
+                                    break;
                                 case COMMAND:
                                     updateState(CHANNEL_COMMAND, message.convertToState(valueSelector));
                                     break;
+                                case COMMAND_ID:
+                                    updateState(CHANNEL_COMMAND_ID, message.convertToState(valueSelector));
+                                    break;
                                 case CONTACT:
                                     updateState(CHANNEL_CONTACT, message.convertToState(valueSelector));
+                                    break;
+                                case CONTACT_1:
+                                    updateState(CHANNEL_CONTACT_1, message.convertToState(valueSelector));
+                                    break;
+                                case CONTACT_2:
+                                    updateState(CHANNEL_CONTACT_2, message.convertToState(valueSelector));
+                                    break;
+                                case CONTACT_3:
+                                    updateState(CHANNEL_CONTACT_3, message.convertToState(valueSelector));
                                     break;
                                 case DIMMING_LEVEL:
                                     updateState(CHANNEL_DIMMING_LEVEL, message.convertToState(valueSelector));
@@ -247,6 +261,9 @@ public class RFXComHandler extends BaseThingHandler implements DeviceMessageList
                                     break;
                                 case TOTAL_USAGE:
                                     updateState(CHANNEL_TOTAL_USAGE, message.convertToState(valueSelector));
+                                    break;
+                                case UV:
+                                    updateState(CHANNEL_UV, message.convertToState(valueSelector));
                                     break;
                                 case VOLTAGE:
                                     updateState(CHANNEL_VOLTAGE, message.convertToState(valueSelector));

@@ -45,6 +45,11 @@
         <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.avmfritz/${project.version}</bundle>
     </feature>
 
+    <feature name="openhab-binding-bigassfan" description="Big Ass Fan Binding" version="${project.version}">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.bigassfan/${project.version}</bundle>
+    </feature>
+
     <feature name="openhab-binding-boschindego" description="Bosch Indego Binding" version="${project.version}">
         <feature>openhab-runtime-base</feature>
         <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.boschindego/${project.version}</bundle>
@@ -61,6 +66,12 @@
     <feature name="openhab-binding-coolmasternet" description="CoolMasterNet Binding" version="${project.version}">
         <feature>openhab-runtime-base</feature>
         <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.coolmasternet/${project.version}</bundle>
+    </feature>
+    
+    <feature name="openhab-binding-dlinksmarthome" description="D-Link Smart Home Binding" version="${project.version}">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.dlinksmarthome/${project.version}</bundle>
     </feature>
 
     <feature name="openhab-binding-dscalarm" description="DSCAlarm Binding" version="${project.version}">
@@ -267,6 +278,11 @@
         <feature>openhab-runtime-base</feature>
         <feature>openhab-transport-upnp</feature>
         <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.squeezebox/${project.version}</bundle>
+    </feature>
+
+    <feature name="openhab-binding-synopanalyzer" description="Synop Analyzer Binding" version="${project.version}">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.synopanalyzer/${project.version}</bundle>
     </feature>
 
     <feature name="openhab-binding-systeminfo" description="System Info Binding" version="${project.version}">
