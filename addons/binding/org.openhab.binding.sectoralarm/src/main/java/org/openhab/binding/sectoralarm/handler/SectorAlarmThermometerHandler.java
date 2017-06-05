@@ -19,16 +19,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The {@link SectorAlarmHandler} is responsible for handling commands, which are
+ * The {@link SectorAlarmThermometerHandler} is responsible for handling commands, which are
  * sent to one of the channels.
  *
  * @author Henrik Svensson - Initial contribution
  */
-public class SectorAlarmHandler extends BaseThingHandler {
+public class SectorAlarmThermometerHandler extends BaseThingHandler {
 
-    private final Logger logger = LoggerFactory.getLogger(SectorAlarmHandler.class);
+    private final Logger logger = LoggerFactory.getLogger(SectorAlarmThermometerHandler.class);
 
-    public SectorAlarmHandler(Thing thing) {
+    public SectorAlarmThermometerHandler(Thing thing) {
         super(thing);
     }
 

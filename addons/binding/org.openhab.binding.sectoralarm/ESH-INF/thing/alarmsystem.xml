@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="sectoralarm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <thing-type id="alarmsystem">
+        <label>SectorAlarm Alarm System</label>
+        <description>A specific alarm system (i.e. "Home").</description>
+        <channels>
+            <channel id="timestamp" typeId="timestamp" />
+            <channel id="alarmstate" typeId="alarmstate" />
+        </channels>
+    </thing-type>
+
+    <channel-type id="alarmstate">
+        <item-type>Number</item-type>
+        <label>Actual alarm state</label>
+        <description>The alarm state is either "Armed", "Partially armed" or "Disarmed"</description>
+        <category>Alarm</category>
+        <state readOnly="false">
+        </state>
+    </channel-type>
+
+    <channel-type id="timestamp">
+        <item-type>DateTime</item-type>
+        <label>Last alarm state update</label>
+        <description>Last alarm state update</description>
+        <state readOnly="true">
+        </state>
+    </channel-type>
+
+</thing:thing-descriptions>
