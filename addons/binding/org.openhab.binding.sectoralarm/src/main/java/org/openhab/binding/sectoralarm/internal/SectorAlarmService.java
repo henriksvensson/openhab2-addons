@@ -10,6 +10,12 @@ import org.jsoup.nodes.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * The {@link SectorAlarmService} handles all communication with the external alarm service
+ * interface, in this case a web based application.
+ *
+ * @author Henrik Svensson
+ */
 public class SectorAlarmService {
 
     // static String logOnPageUrl = "https://minasidor.sectoralarm.se/Users/Account/LogOn";
@@ -46,11 +52,11 @@ public class SectorAlarmService {
                                                                                 // armed/disarmed the alarm. For example
                                                                                 // "6/11 20:02 (av 4)".
 
-            logger.debug(status.html());
-            logger.debug(time.html());
+            // logger.debug(status.html());
+            // logger.debug(time.html());
 
         } catch (IOException e) {
-            logger.debug(e.getMessage());
+            // logger.debug(e.getMessage());
         }
 
     }

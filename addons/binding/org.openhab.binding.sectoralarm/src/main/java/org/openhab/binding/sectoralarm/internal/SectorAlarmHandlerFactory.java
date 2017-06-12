@@ -10,6 +10,7 @@ package org.openhab.binding.sectoralarm.internal;
 
 import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.*;
 
+import java.util.Dictionary;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -20,6 +21,7 @@ import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmAlarmSystemHandler;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmThermometerHandler;
+import org.osgi.service.component.ComponentContext;
 
 /**
  * The {@link SectorAlarmHandlerFactory} is responsible for creating things and thing
@@ -36,6 +38,14 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
     public boolean supportsThingType(ThingTypeUID thingTypeUID) {
         return SUPPORTED_THING_TYPES_UIDS.contains(thingTypeUID);
     }
+
+    @Override
+    protected void activate(ComponentContext componentContext) {
+        super.activate(componentContext);
+        Dictionary<String, Object> properties = componentContext.getProperties();
+        String email = (String) properties.get("email");
+        String password = (String) properties.get("password");
+    };
 
     @Override
     protected ThingHandler createHandler(Thing thing) {

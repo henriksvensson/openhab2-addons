@@ -7,8 +7,6 @@ Bundle-Version: 2.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: ., lib/jsoup-1.10.3.jar
 Import-Package: 
- org.openhab.binding.sectoralarm,
- org.openhab.binding.sectoralarm.handler,
  org.eclipse.smarthome.config.core,
  org.eclipse.smarthome.core.library.types,
  org.eclipse.smarthome.core.thing,
@@ -16,6 +14,9 @@ Import-Package:
  org.eclipse.smarthome.core.thing.binding.builder,
  org.eclipse.smarthome.core.thing.type,
  org.eclipse.smarthome.core.types,
+ org.openhab.binding.sectoralarm,
+ org.openhab.binding.sectoralarm.handler,
+ org.osgi.service.component;version="1.2.2",
  org.slf4j
 Service-Component: OSGI-INF/*.xml
 Export-Package: org.openhab.binding.sectoralarm,
