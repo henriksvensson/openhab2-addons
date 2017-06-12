@@ -7,6 +7,8 @@ import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SectorAlarmService {
 
@@ -19,13 +21,11 @@ public class SectorAlarmService {
 
     static int timeout = 10000; // milliseconds
 
-    public static void main(String[] args) {
+    private final Logger logger = LoggerFactory.getLogger(SectorAlarmService.class);
 
-        // Expect user name, password and alarm system code as program arguments.
-        if (args.length != 3) {
-            System.err.println("Usage: java -jar sectoralarmscraper.jar <user name> <password> <alarm system code>");
-            return;
-        }
+    public void main(String[] args) {
+
+        // System.err.println("Usage: java -jar sectoralarmscraper.jar <user name> <password> <alarm system code>");
 
         String userName = args[0];
         String password = args[1];
@@ -46,11 +46,11 @@ public class SectorAlarmService {
                                                                                 // armed/disarmed the alarm. For example
                                                                                 // "6/11 20:02 (av 4)".
 
-            System.out.println(status.html());
-            System.out.println(time.html());
+            logger.debug(status.html());
+            logger.debug(time.html());
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.debug(e.getMessage());
         }
 
     }
