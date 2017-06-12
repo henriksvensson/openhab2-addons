@@ -1,9 +1,12 @@
 package org.openhab.binding.sectoralarm.internal;
 
 import java.io.IOException;
-import java.sql.Connection;
 
+import org.jsoup.Connection.Method;
+import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class SectorAlarmService {
 
@@ -31,11 +34,10 @@ public class SectorAlarmService {
         String alarmSystemUrl = alarmSystemBaseUrl + alarmSystemCode + "?ethernetStatus=online&locksAvailable=False";
 
         try {
-            Connection.Response r = Jsoup.connect(logOnPageUrl).timeout(timeout).execute();
+            Response r = Jsoup.connect(logOnPageUrl).timeout(timeout).execute();
 
-            Connection.Response response = Jsoup.connect(logOnPageUrl + "?Returnurl=~%2F")
-                    .data("userNameOrEmail", userName).data("password", password).cookies(r.cookies())
-                    .method(Connection.Method.POST).timeout(timeout).execute();
+            Response response = Jsoup.connect(logOnPageUrl + "?Returnurl=~%2F").data("userNameOrEmail", userName)
+                    .data("password", password).cookies(r.cookies()).method(Method.POST).timeout(timeout).execute();
 
             Document doc = Jsoup.connect(alarmSystemUrl).cookies(response.cookies()).timeout(timeout).get();
 

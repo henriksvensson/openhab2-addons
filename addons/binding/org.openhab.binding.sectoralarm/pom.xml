@@ -20,13 +20,4 @@
 	<name>SectorAlarm Binding</name>
 	<packaging>eclipse-plugin</packaging>
 
-    <dependencies>
-        <dependency>
-            <!-- jsoup HTML parser library @ http://jsoup.org/ -->
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.10.1</version>
-        </dependency>
-    </dependencies>
-
 </project>
