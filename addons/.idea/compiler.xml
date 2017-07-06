@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="org.openhab.binding.airquality" />
+        <module name="org.openhab.binding.allplay" />
+        <module name="org.openhab.binding.amazondashbutton" />
+        <module name="org.openhab.binding.atlona" />
+        <module name="org.openhab.binding.autelis" />
+        <module name="org.openhab.binding.avmfritz" />
+        <module name="org.openhab.binding.bigassfan" />
+        <module name="org.openhab.binding.boschindego" />
+        <module name="org.openhab.binding.chromecast" />
+        <module name="org.openhab.binding.coolmasternet" />
+        <module name="org.openhab.binding.dlinksmarthome" />
+        <module name="org.openhab.binding.dscalarm" />
+        <module name="org.openhab.binding.exec" />
+        <module name="org.openhab.binding.feed" />
+        <module name="org.openhab.binding.feed.test" />
+        <module name="org.openhab.binding.folding" />
+        <module name="org.openhab.binding.freebox" />
+        <module name="org.openhab.binding.gardena" />
+        <module name="org.openhab.binding.globalcache" />
+        <module name="org.openhab.binding.harmonyhub" />
+        <module name="org.openhab.binding.hdanywhere" />
+        <module name="org.openhab.binding.hdpowerview" />
+        <module name="org.openhab.binding.homematic" />
+        <module name="org.openhab.binding.ipp" />
+        <module name="org.openhab.binding.keba" />
+        <module name="org.openhab.binding.kodi" />
+        <module name="org.openhab.binding.kostalinverter" />
+        <module name="org.openhab.binding.lgtvserial" />
+        <module name="org.openhab.binding.lutron" />
+        <module name="org.openhab.binding.max" />
+        <module name="org.openhab.binding.max.test" />
+        <module name="org.openhab.binding.meteostick" />
+        <module name="org.openhab.binding.miele" />
+        <module name="org.openhab.binding.mihome" />
+        <module name="org.openhab.binding.milight" />
+        <module name="org.openhab.binding.minecraft" />
+        <module name="org.openhab.binding.netatmo" />
+        <module name="org.openhab.binding.network" />
+        <module name="org.openhab.binding.nikohomecontrol" />
+        <module name="org.openhab.binding.oceanic" />
+        <module name="org.openhab.binding.onebusaway" />
+        <module name="org.openhab.binding.onkyo" />
+        <module name="org.openhab.binding.opensprinkler" />
+        <module name="org.openhab.binding.orvibo" />
+        <module name="org.openhab.binding.pioneeravr" />
+        <module name="org.openhab.binding.pulseaudio" />
+        <module name="org.openhab.binding.rfxcom" />
+        <module name="org.openhab.binding.rfxcom.test" />
+        <module name="org.openhab.binding.rme" />
+        <module name="org.openhab.binding.russound" />
+        <module name="org.openhab.binding.samsungtv" />
+        <module name="org.openhab.binding.sectoralarm" />
+        <module name="org.openhab.binding.sensebox" />
+        <module name="org.openhab.binding.silvercrestwifisocket" />
+        <module name="org.openhab.binding.sleepiq" />
+        <module name="org.openhab.binding.smaenergymeter" />
+        <module name="org.openhab.binding.squeezebox" />
+        <module name="org.openhab.binding.synopanalyzer" />
+        <module name="org.openhab.binding.systeminfo" />
+        <module name="org.openhab.binding.systeminfo.test" />
+        <module name="org.openhab.binding.tankerkoenig" />
+        <module name="org.openhab.binding.tellstick" />
+        <module name="org.openhab.binding.tesla" />
+        <module name="org.openhab.binding.toon" />
+        <module name="org.openhab.binding.urtsi" />
+        <module name="org.openhab.binding.vitotronic" />
+        <module name="org.openhab.binding.wifiled" />
+        <module name="org.openhab.binding.windcentrale" />
+        <module name="org.openhab.binding.yamahareceiver" />
+        <module name="org.openhab.binding.zoneminder" />
+        <module name="org.openhab.binding.zway" />
+        <module name="org.openhab.io.homekit" />
+        <module name="org.openhab.io.hueemulation" />
+        <module name="org.openhab.io.imperihome" />
+        <module name="org.openhab.io.openhabcloud" />
+        <module name="org.openhab.io.transport.feed" />
+        <module name="org.openhab.ui.cometvisu" />
+        <module name="org.openhab.ui.cometvisu.php" />
+        <module name="org.openhab.voice.marytts" />
+        <module name="org.openhab.voice.voicerss" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="org.openhab.binding.airquality" target="1.8" />
+      <module name="org.openhab.binding.allplay" target="1.8" />
+      <module name="org.openhab.binding.amazondashbutton" target="1.8" />
+      <module name="org.openhab.binding.atlona" target="1.8" />
+      <module name="org.openhab.binding.autelis" target="1.8" />
+      <module name="org.openhab.binding.avmfritz" target="1.8" />
+      <module name="org.openhab.binding.bigassfan" target="1.8" />
+      <module name="org.openhab.binding.boschindego" target="1.8" />
+      <module name="org.openhab.binding.chromecast" target="1.8" />
+      <module name="org.openhab.binding.coolmasternet" target="1.8" />
+      <module name="org.openhab.binding.dlinksmarthome" target="1.8" />
+      <module name="org.openhab.binding.dscalarm" target="1.8" />
+      <module name="org.openhab.binding.exec" target="1.8" />
+      <module name="org.openhab.binding.feed" target="1.8" />
+      <module name="org.openhab.binding.feed.test" target="1.8" />
+      <module name="org.openhab.binding.folding" target="1.8" />
+      <module name="org.openhab.binding.freebox" target="1.8" />
+      <module name="org.openhab.binding.gardena" target="1.8" />
+      <module name="org.openhab.binding.globalcache" target="1.8" />
+      <module name="org.openhab.binding.harmonyhub" target="1.8" />
+      <module name="org.openhab.binding.hdanywhere" target="1.8" />
+      <module name="org.openhab.binding.hdpowerview" target="1.8" />
+      <module name="org.openhab.binding.homematic" target="1.8" />
+      <module name="org.openhab.binding.ipp" target="1.8" />
+      <module name="org.openhab.binding.keba" target="1.8" />
+      <module name="org.openhab.binding.kodi" target="1.8" />
+      <module name="org.openhab.binding.kostalinverter" target="1.8" />
+      <module name="org.openhab.binding.lgtvserial" target="1.8" />
+      <module name="org.openhab.binding.lutron" target="1.8" />
+      <module name="org.openhab.binding.max" target="1.8" />
+      <module name="org.openhab.binding.max.test" target="1.8" />
+      <module name="org.openhab.binding.meteostick" target="1.8" />
+      <module name="org.openhab.binding.miele" target="1.8" />
+      <module name="org.openhab.binding.mihome" target="1.8" />
+      <module name="org.openhab.binding.milight" target="1.8" />
+      <module name="org.openhab.binding.minecraft" target="1.8" />
+      <module name="org.openhab.binding.netatmo" target="1.8" />
+      <module name="org.openhab.binding.network" target="1.8" />
+      <module name="org.openhab.binding.nikohomecontrol" target="1.8" />
+      <module name="org.openhab.binding.oceanic" target="1.8" />
+      <module name="org.openhab.binding.onebusaway" target="1.8" />
+      <module name="org.openhab.binding.onkyo" target="1.8" />
+      <module name="org.openhab.binding.opensprinkler" target="1.8" />
+      <module name="org.openhab.binding.orvibo" target="1.8" />
+      <module name="org.openhab.binding.pioneeravr" target="1.8" />
+      <module name="org.openhab.binding.pulseaudio" target="1.8" />
+      <module name="org.openhab.binding.rfxcom" target="1.8" />
+      <module name="org.openhab.binding.rfxcom.test" target="1.7" />
+      <module name="org.openhab.binding.rme" target="1.8" />
+      <module name="org.openhab.binding.russound" target="1.8" />
+      <module name="org.openhab.binding.samsungtv" target="1.8" />
+      <module name="org.openhab.binding.sectoralarm" target="1.8" />
+      <module name="org.openhab.binding.sensebox" target="1.8" />
+      <module name="org.openhab.binding.silvercrestwifisocket" target="1.8" />
+      <module name="org.openhab.binding.sleepiq" target="1.8" />
+      <module name="org.openhab.binding.smaenergymeter" target="1.8" />
+      <module name="org.openhab.binding.squeezebox" target="1.8" />
+      <module name="org.openhab.binding.synopanalyzer" target="1.8" />
+      <module name="org.openhab.binding.systeminfo" target="1.8" />
+      <module name="org.openhab.binding.systeminfo.test" target="1.8" />
+      <module name="org.openhab.binding.tankerkoenig" target="1.8" />
+      <module name="org.openhab.binding.tellstick" target="1.8" />
+      <module name="org.openhab.binding.tesla" target="1.8" />
+      <module name="org.openhab.binding.toon" target="1.8" />
+      <module name="org.openhab.binding.urtsi" target="1.8" />
+      <module name="org.openhab.binding.vitotronic" target="1.8" />
+      <module name="org.openhab.binding.wifiled" target="1.8" />
+      <module name="org.openhab.binding.windcentrale" target="1.8" />
+      <module name="org.openhab.binding.yamahareceiver" target="1.8" />
+      <module name="org.openhab.binding.zoneminder" target="1.8" />
+      <module name="org.openhab.binding.zway" target="1.8" />
+      <module name="org.openhab.io.homekit" target="1.8" />
+      <module name="org.openhab.io.hueemulation" target="1.8" />
+      <module name="org.openhab.io.imperihome" target="1.8" />
+      <module name="org.openhab.io.openhabcloud" target="1.8" />
+      <module name="org.openhab.io.transport.feed" target="1.8" />
+      <module name="org.openhab.ui.cometvisu" target="1.8" />
+      <module name="org.openhab.ui.cometvisu.php" target="1.8" />
+      <module name="org.openhab.voice.marytts" target="1.8" />
+      <module name="org.openhab.voice.voicerss" target="1.8" />
+      <module name="pom (1) (org.openhab.binding)" target="1.8" />
+      <module name="pom (2) (org.openhab.addons.io)" target="1.8" />
+      <module name="pom (3) (org.openhab.addons)" target="1.8" />
+      <module name="pom (4) (org.openhab.ui)" target="1.8" />
+      <module name="pom (5) (org.openhab.addons.voice)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

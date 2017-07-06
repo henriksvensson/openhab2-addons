@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.airquality/org.openhab.binding.airquality.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.airquality/org.openhab.binding.airquality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.allplay/org.openhab.binding.allplay.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.allplay/org.openhab.binding.allplay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.amazondashbutton/org.openhab.binding.amazondashbutton.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.amazondashbutton/org.openhab.binding.amazondashbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.atlona/org.openhab.binding.atlona.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.atlona/org.openhab.binding.atlona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.autelis/org.openhab.binding.autelis.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.autelis/org.openhab.binding.autelis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.avmfritz/org.openhab.binding.avmfritz.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.avmfritz/org.openhab.binding.avmfritz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.bigassfan/org.openhab.binding.bigassfan.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.bigassfan/org.openhab.binding.bigassfan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.boschindego/org.openhab.binding.boschindego.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.boschindego/org.openhab.binding.boschindego.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.chromecast/org.openhab.binding.chromecast.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.chromecast/org.openhab.binding.chromecast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.coolmasternet/org.openhab.binding.coolmasternet.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.coolmasternet/org.openhab.binding.coolmasternet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.dlinksmarthome/org.openhab.binding.dlinksmarthome.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.dlinksmarthome/org.openhab.binding.dlinksmarthome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.dscalarm/org.openhab.binding.dscalarm.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.dscalarm/org.openhab.binding.dscalarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.exec/org.openhab.binding.exec.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.exec/org.openhab.binding.exec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.feed/org.openhab.binding.feed.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.feed/org.openhab.binding.feed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.feed.test/org.openhab.binding.feed.test.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.feed.test/org.openhab.binding.feed.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.folding/org.openhab.binding.folding.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.folding/org.openhab.binding.folding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.freebox/org.openhab.binding.freebox.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.freebox/org.openhab.binding.freebox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.gardena/org.openhab.binding.gardena.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.gardena/org.openhab.binding.gardena.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.globalcache/org.openhab.binding.globalcache.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.globalcache/org.openhab.binding.globalcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.harmonyhub/org.openhab.binding.harmonyhub.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.harmonyhub/org.openhab.binding.harmonyhub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.hdanywhere/org.openhab.binding.hdanywhere.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.hdanywhere/org.openhab.binding.hdanywhere.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.hdpowerview/org.openhab.binding.hdpowerview.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.hdpowerview/org.openhab.binding.hdpowerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.homematic/org.openhab.binding.homematic.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.homematic/org.openhab.binding.homematic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.ipp/org.openhab.binding.ipp.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.ipp/org.openhab.binding.ipp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.keba/org.openhab.binding.keba.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.keba/org.openhab.binding.keba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.kodi/org.openhab.binding.kodi.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.kodi/org.openhab.binding.kodi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.kostalinverter/org.openhab.binding.kostalinverter.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.kostalinverter/org.openhab.binding.kostalinverter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.lgtvserial/org.openhab.binding.lgtvserial.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.lgtvserial/org.openhab.binding.lgtvserial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.lutron/org.openhab.binding.lutron.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.lutron/org.openhab.binding.lutron.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.max/org.openhab.binding.max.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.max/org.openhab.binding.max.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.max.test/org.openhab.binding.max.test.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.max.test/org.openhab.binding.max.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.meteostick/org.openhab.binding.meteostick.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.meteostick/org.openhab.binding.meteostick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.miele/org.openhab.binding.miele.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.miele/org.openhab.binding.miele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.mihome/org.openhab.binding.mihome.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.mihome/org.openhab.binding.mihome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.milight/org.openhab.binding.milight.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.milight/org.openhab.binding.milight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.minecraft/org.openhab.binding.minecraft.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.minecraft/org.openhab.binding.minecraft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.netatmo/org.openhab.binding.netatmo.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.netatmo/org.openhab.binding.netatmo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.network/org.openhab.binding.network.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.network/org.openhab.binding.network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.nikohomecontrol/org.openhab.binding.nikohomecontrol.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.nikohomecontrol/org.openhab.binding.nikohomecontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.oceanic/org.openhab.binding.oceanic.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.oceanic/org.openhab.binding.oceanic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.onebusaway/org.openhab.binding.onebusaway.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.onebusaway/org.openhab.binding.onebusaway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.onkyo/org.openhab.binding.onkyo.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.onkyo/org.openhab.binding.onkyo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.opensprinkler/org.openhab.binding.opensprinkler.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.opensprinkler/org.openhab.binding.opensprinkler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.orvibo/org.openhab.binding.orvibo.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.orvibo/org.openhab.binding.orvibo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.pioneeravr/org.openhab.binding.pioneeravr.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.pioneeravr/org.openhab.binding.pioneeravr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.pulseaudio/org.openhab.binding.pulseaudio.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.pulseaudio/org.openhab.binding.pulseaudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.rfxcom/org.openhab.binding.rfxcom.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.rfxcom/org.openhab.binding.rfxcom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.rfxcom.test/org.openhab.binding.rfxcom.test.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.rfxcom.test/org.openhab.binding.rfxcom.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.rme/org.openhab.binding.rme.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.rme/org.openhab.binding.rme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.russound/org.openhab.binding.russound.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.russound/org.openhab.binding.russound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.samsungtv/org.openhab.binding.samsungtv.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.samsungtv/org.openhab.binding.samsungtv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.sectoralarm/org.openhab.binding.sectoralarm.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.sectoralarm/org.openhab.binding.sectoralarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.sensebox/org.openhab.binding.sensebox.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.sensebox/org.openhab.binding.sensebox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.silvercrestwifisocket/org.openhab.binding.silvercrestwifisocket.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.silvercrestwifisocket/org.openhab.binding.silvercrestwifisocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.sleepiq/org.openhab.binding.sleepiq.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.sleepiq/org.openhab.binding.sleepiq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.smaenergymeter/org.openhab.binding.smaenergymeter.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.smaenergymeter/org.openhab.binding.smaenergymeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.squeezebox/org.openhab.binding.squeezebox.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.squeezebox/org.openhab.binding.squeezebox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.synopanalyzer/org.openhab.binding.synopanalyzer.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.synopanalyzer/org.openhab.binding.synopanalyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.systeminfo/org.openhab.binding.systeminfo.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.systeminfo/org.openhab.binding.systeminfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.systeminfo.test/org.openhab.binding.systeminfo.test.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.systeminfo.test/org.openhab.binding.systeminfo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.tankerkoenig/org.openhab.binding.tankerkoenig.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.tankerkoenig/org.openhab.binding.tankerkoenig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.tellstick/org.openhab.binding.tellstick.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.tellstick/org.openhab.binding.tellstick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.tesla/org.openhab.binding.tesla.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.tesla/org.openhab.binding.tesla.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.toon/org.openhab.binding.toon.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.toon/org.openhab.binding.toon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.urtsi/org.openhab.binding.urtsi.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.urtsi/org.openhab.binding.urtsi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.vitotronic/org.openhab.binding.vitotronic.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.vitotronic/org.openhab.binding.vitotronic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.wifiled/org.openhab.binding.wifiled.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.wifiled/org.openhab.binding.wifiled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.windcentrale/org.openhab.binding.windcentrale.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.windcentrale/org.openhab.binding.windcentrale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.yamahareceiver/org.openhab.binding.yamahareceiver.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.yamahareceiver/org.openhab.binding.yamahareceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.zoneminder/org.openhab.binding.zoneminder.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.zoneminder/org.openhab.binding.zoneminder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/org.openhab.binding.zway/org.openhab.binding.zway.iml" filepath="$PROJECT_DIR$/binding/org.openhab.binding.zway/org.openhab.binding.zway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/org.openhab.io.homekit/org.openhab.io.homekit.iml" filepath="$PROJECT_DIR$/io/org.openhab.io.homekit/org.openhab.io.homekit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/org.openhab.io.hueemulation/org.openhab.io.hueemulation.iml" filepath="$PROJECT_DIR$/io/org.openhab.io.hueemulation/org.openhab.io.hueemulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/org.openhab.io.imperihome/org.openhab.io.imperihome.iml" filepath="$PROJECT_DIR$/io/org.openhab.io.imperihome/org.openhab.io.imperihome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/org.openhab.io.openhabcloud/org.openhab.io.openhabcloud.iml" filepath="$PROJECT_DIR$/io/org.openhab.io.openhabcloud/org.openhab.io.openhabcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/org.openhab.io.transport.feed/org.openhab.io.transport.feed.iml" filepath="$PROJECT_DIR$/io/org.openhab.io.transport.feed/org.openhab.io.transport.feed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/org.openhab.ui.cometvisu/org.openhab.ui.cometvisu.iml" filepath="$PROJECT_DIR$/ui/org.openhab.ui.cometvisu/org.openhab.ui.cometvisu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/org.openhab.ui.cometvisu.php/org.openhab.ui.cometvisu.php.iml" filepath="$PROJECT_DIR$/ui/org.openhab.ui.cometvisu.php/org.openhab.ui.cometvisu.php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voice/org.openhab.voice.marytts/org.openhab.voice.marytts.iml" filepath="$PROJECT_DIR$/voice/org.openhab.voice.marytts/org.openhab.voice.marytts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voice/org.openhab.voice.voicerss/org.openhab.voice.voicerss.iml" filepath="$PROJECT_DIR$/voice/org.openhab.voice.voicerss/org.openhab.voice.voicerss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binding/pom (1) (org.openhab.binding).iml" filepath="$PROJECT_DIR$/binding/pom (1) (org.openhab.binding).iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/pom (2) (org.openhab.addons.io).iml" filepath="$PROJECT_DIR$/io/pom (2) (org.openhab.addons.io).iml" />
+      <module fileurl="file://$PROJECT_DIR$/pom (3) (org.openhab.addons).iml" filepath="$PROJECT_DIR$/pom (3) (org.openhab.addons).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/pom (4) (org.openhab.ui).iml" filepath="$PROJECT_DIR$/ui/pom (4) (org.openhab.ui).iml" />
+      <module fileurl="file://$PROJECT_DIR$/voice/pom (5) (org.openhab.addons.voice).iml" filepath="$PROJECT_DIR$/voice/pom (5) (org.openhab.addons.voice).iml" />
+    </modules>
+  </component>
+</project>

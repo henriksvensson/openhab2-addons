@@ -15,10 +15,12 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.eclipse.smarthome.core.thing.Bridge;
 import org.eclipse.smarthome.core.thing.Thing;
 import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
+import org.openhab.binding.sectoralarm.handler.SectorAlarmAlarmSystemHandler;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmThermometerHandler;
 import org.osgi.service.component.ComponentContext;
 
@@ -55,9 +57,9 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
             return new SectorAlarmThermometerHandler(thing);
         }
 
-        // if (thingTypeUID.equals(THING_TYPE_ALARM_SYSTEM)) {
-        // return new SectorAlarmAlarmSystemHandler(thing);
-        // }
+        if (thingTypeUID.equals(THING_TYPE_ALARM_SYSTEM)) {
+            return new SectorAlarmAlarmSystemHandler((Bridge) thing);
+        }
 
         return null;
     }
