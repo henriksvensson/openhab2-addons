@@ -19,7 +19,6 @@ import org.eclipse.smarthome.core.thing.Thing;
 import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
-import org.openhab.binding.sectoralarm.handler.SectorAlarmAlarmSystemHandler;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmThermometerHandler;
 import org.osgi.service.component.ComponentContext;
 
@@ -27,7 +26,7 @@ import org.osgi.service.component.ComponentContext;
  * The {@link SectorAlarmHandlerFactory} is responsible for creating things and thing
  * handlers.
  *
- * @author Henrik Svensson - Initial contribution
+ * @author Henrik Svensson
  */
 public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
 
@@ -45,6 +44,7 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
         Dictionary<String, Object> properties = componentContext.getProperties();
         String email = (String) properties.get("email");
         String password = (String) properties.get("password");
+        String baseUrl = (String) properties.get("baseUrl");
     };
 
     @Override
@@ -55,10 +55,11 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
             return new SectorAlarmThermometerHandler(thing);
         }
 
-        if (thingTypeUID.equals(THING_TYPE_ALARM_SYSTEM)) {
-            return new SectorAlarmAlarmSystemHandler(thing);
-        }
+        // if (thingTypeUID.equals(THING_TYPE_ALARM_SYSTEM)) {
+        // return new SectorAlarmAlarmSystemHandler(thing);
+        // }
 
         return null;
     }
+
 }

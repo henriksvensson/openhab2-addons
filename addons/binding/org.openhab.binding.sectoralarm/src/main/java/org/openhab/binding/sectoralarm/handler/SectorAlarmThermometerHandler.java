@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
  * The {@link SectorAlarmThermometerHandler} is responsible for handling commands, which are
  * sent to one of the channels.
  *
- * @author Henrik Svensson - Initial contribution
+ * @author Henrik Svensson
  */
 public class SectorAlarmThermometerHandler extends BaseThingHandler {
 
