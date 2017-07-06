@@ -17,20 +17,24 @@ import org.eclipse.smarthome.core.thing.ThingStatus;
 import org.eclipse.smarthome.core.thing.binding.BaseBridgeHandler;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
 import org.eclipse.smarthome.core.types.Command;
+import org.openhab.binding.sectoralarm.SectorAlarmBridgeConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The {@link SectorAlarmAlarmSystemHandler} is responsible for handling commands, which are
+ * The {@link SectorAlarmBridgeHandler} is responsible for handling commands, which are
  * sent to one of the channels.
  *
  * @author Henrik Svensson
  */
-public class SectorAlarmAlarmSystemHandler extends BaseBridgeHandler {
+public class SectorAlarmBridgeHandler extends BaseBridgeHandler {
 
-    private final Logger logger = LoggerFactory.getLogger(SectorAlarmAlarmSystemHandler.class);
+    private final Logger logger = LoggerFactory.getLogger(SectorAlarmBridgeHandler.class);
 
-    public SectorAlarmAlarmSystemHandler(Bridge bridge) {
+    private String username;
+    private String password;
+
+    public SectorAlarmBridgeHandler(Bridge bridge) {
         super(bridge);
     }
 
@@ -49,6 +53,8 @@ public class SectorAlarmAlarmSystemHandler extends BaseBridgeHandler {
 
     @Override
     public void initialize() {
+        SectorAlarmBridgeConfiguration conf = getConfigAs(SectorAlarmBridgeConfiguration.class);
+
         // TODO: Initialize the thing. If done set status to ONLINE to indicate proper working.
         // Long running initialization should be done asynchronously in background.
         updateStatus(ThingStatus.ONLINE);
