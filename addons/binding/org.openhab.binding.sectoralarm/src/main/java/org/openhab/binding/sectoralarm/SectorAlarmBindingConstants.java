@@ -8,6 +8,10 @@
  */
 package org.openhab.binding.sectoralarm;
 
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import org.eclipse.smarthome.core.thing.ThingTypeUID;
 
 /**
@@ -28,5 +32,8 @@ public class SectorAlarmBindingConstants {
     public static final String CHANNEL_TIMESTAMP = "timestamp";
     public static final String CHANNEL_TEMPERATURE = "temperature";
     public static final String CHANNEL_ALARM_STATE = "alarmstate";
+
+    public static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Stream
+            .of(THING_TYPE_THERMOMETER, THING_TYPE_ALARM_SYSTEM).collect(Collectors.toSet());
 
 }

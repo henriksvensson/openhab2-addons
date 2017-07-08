@@ -31,9 +31,6 @@ public class SectorAlarmBridgeHandler extends BaseBridgeHandler {
 
     private final Logger logger = LoggerFactory.getLogger(SectorAlarmBridgeHandler.class);
 
-    private String username;
-    private String password;
-
     public SectorAlarmBridgeHandler(Bridge bridge) {
         super(bridge);
     }

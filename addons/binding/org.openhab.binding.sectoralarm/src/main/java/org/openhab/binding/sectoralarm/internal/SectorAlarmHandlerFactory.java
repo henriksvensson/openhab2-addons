@@ -8,18 +8,17 @@
  */
 package org.openhab.binding.sectoralarm.internal;
 
-import static org.openhab.binding.sectoralarm.SectorAlarmBindingConstants.*;
-
 import java.util.Dictionary;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Hashtable;
 
+import org.eclipse.smarthome.config.discovery.DiscoveryService;
 import org.eclipse.smarthome.core.thing.Bridge;
 import org.eclipse.smarthome.core.thing.Thing;
 import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
+import org.openhab.binding.sectoralarm.SectorAlarmBindingConstants;
+import org.openhab.binding.sectoralarm.discovery.SectorAlarmDiscoveryService;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmBridgeHandler;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmThermometerHandler;
 import org.osgi.service.component.ComponentContext;
@@ -32,12 +31,11 @@ import org.osgi.service.component.ComponentContext;
  */
 public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
 
-    private static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Stream
-            .of(THING_TYPE_THERMOMETER, THING_TYPE_ALARM_SYSTEM).collect(Collectors.toSet());
+    private SectorAlarmDiscoveryService discoveryService = null;
 
     @Override
     public boolean supportsThingType(ThingTypeUID thingTypeUID) {
-        return SUPPORTED_THING_TYPES_UIDS.contains(thingTypeUID);
+        return SectorAlarmBindingConstants.SUPPORTED_THING_TYPES_UIDS.contains(thingTypeUID);
     }
 
     @Override
@@ -53,15 +51,28 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
     protected ThingHandler createHandler(Thing thing) {
         ThingTypeUID thingTypeUID = thing.getThingTypeUID();
 
-        if (thingTypeUID.equals(THING_TYPE_THERMOMETER)) {
+        if (thingTypeUID.equals(SectorAlarmBindingConstants.THING_TYPE_THERMOMETER)) {
             return new SectorAlarmThermometerHandler(thing);
         }
 
-        if (thingTypeUID.equals(THING_TYPE_ALARM_SYSTEM)) {
-            return new SectorAlarmBridgeHandler((Bridge) thing);
+        if (thingTypeUID.equals(SectorAlarmBindingConstants.THING_TYPE_ALARM_SYSTEM)) {
+            SectorAlarmBridgeHandler handler = new SectorAlarmBridgeHandler((Bridge) thing);
+            registerDeviceDiscoveryService(handler);
+            return handler;
         }
 
         return null;
+    }
+
+    private void registerDeviceDiscoveryService(SectorAlarmBridgeHandler bridgeHandler) {
+        if (discoveryService == null) {
+            discoveryService = new SectorAlarmDiscoveryService(bridgeHandler);
+            discoveryService.activate();
+            bundleContext.registerService(DiscoveryService.class.getName(), discoveryService,
+                    new Hashtable<String, Object>());
+        } else {
+            discoveryService.addBridgeHandler(bridgeHandler);
+        }
     }
 
 }
