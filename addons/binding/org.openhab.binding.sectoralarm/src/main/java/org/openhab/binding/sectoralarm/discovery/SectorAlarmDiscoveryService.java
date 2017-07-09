@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Discovery Service class for {@link SectorAlarmBridge} used to discover
+ * Discovery Service class for {@link SectorAlarmBridgeHandler} used to discover
  * Things attached to a given alarm system.
  *
  * @author Henrik Svensson - Initial contribution
