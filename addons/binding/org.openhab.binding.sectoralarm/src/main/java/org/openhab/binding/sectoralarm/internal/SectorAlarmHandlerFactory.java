@@ -69,7 +69,7 @@ public class SectorAlarmHandlerFactory extends BaseThingHandlerFactory {
             discoveryService = new SectorAlarmDiscoveryService(bridgeHandler);
             discoveryService.activate();
             bundleContext.registerService(DiscoveryService.class.getName(), discoveryService,
-                    new Hashtable<String, Object>());
+                    new Hashtable<>());
         } else {
             discoveryService.addBridgeHandler(bridgeHandler);
         }
