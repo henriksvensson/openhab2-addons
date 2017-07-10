@@ -8,11 +8,6 @@
  */
 package org.openhab.binding.sectoralarm.discovery;
 
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.Vector;
-
 import org.eclipse.smarthome.config.discovery.AbstractDiscoveryService;
 import org.eclipse.smarthome.config.discovery.DiscoveryResult;
 import org.eclipse.smarthome.config.discovery.DiscoveryResultBuilder;
@@ -21,8 +16,14 @@ import org.eclipse.smarthome.core.thing.ThingUID;
 import org.openhab.binding.sectoralarm.SectorAlarmBindingConstants;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmBridgeHandler;
 import org.openhab.binding.sectoralarm.internal.SectorAlarmService;
+import org.openhab.binding.sectoralarm.internal.model.AlarmSystem;
+import org.openhab.binding.sectoralarm.internal.model.Temperature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.Set;
+import java.util.Vector;
 
 /**
  * Discovery Service class for {@link SectorAlarmBridgeHandler} used to discover
@@ -82,21 +83,18 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
 
     @Override
     protected void startScan() {
-        logger.debug("*** startScan");
-        String tempId = String.valueOf(new Random().nextInt());
-
+        logger.debug("Scanning for SectorAlarm things.");
         for (SectorAlarmBridgeHandler bridgeHandler : bridgeHandlers) {
-            logger.debug("TODO: start scan for sector alarm things");
-            ThingUID thingUID = new ThingUID(SectorAlarmBindingConstants.THING_TYPE_THERMOMETER, "therm" + tempId);
-            if (thingUID != null) {
+            AlarmSystem alarmSystem = sectorAlarmService.getAlarmSystem();
+
+            for (Temperature temperature : alarmSystem.temperatures) {
+                ThingUID thingUID = new ThingUID(SectorAlarmBindingConstants.THING_TYPE_THERMOMETER, temperature.serialNo);
+
                 DiscoveryResult discoveryResult = DiscoveryResultBuilder.create(thingUID).withTTL(DEFAULT_TTL)
                         // .withProperty(TellstickBindingConstants.DEVICE_ID, device.getUUId())
                         .withBridge(bridgeHandler.getThing().getBridgeUID())
-                        .withLabel("Discovery test thermometer " + tempId).build();
+                        .withLabel(temperature.label).build();
                 thingDiscovered(discoveryResult);
-
-            } else {
-                logger.warn("Discovered unsupported Sector Alarm device.");
             }
         }
     }

@@ -15,7 +15,7 @@ package org.openhab.binding.sectoralarm;
  * @author Henrik Svensson - Initial contribution
  */
 public class SectorAlarmBridgeConfiguration {
-    public String username;
+    public String email;
     public String password;
     public String alarmSystemCode;
     public String baseUrl;

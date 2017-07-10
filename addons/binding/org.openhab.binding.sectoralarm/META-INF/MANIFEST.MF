@@ -16,11 +16,13 @@ Import-Package:
  org.eclipse.smarthome.core.thing.binding.builder,
  org.eclipse.smarthome.core.thing.type,
  org.eclipse.smarthome.core.types,
+ org.jsoup;resolution:=optional,
  org.openhab.binding.sectoralarm,
  org.openhab.binding.sectoralarm.handler,
+ org.osgi.framework,
  org.osgi.service.component;version="1.2.2",
  org.slf4j,
- org.osgi.framework
+ com.google.gson
 Service-Component: OSGI-INF/*.xml
 Export-Package: org.openhab.binding.sectoralarm,
  org.openhab.binding.sectoralarm.handler

@@ -75,7 +75,7 @@ public class SectorAlarmBridgeHandler extends BaseBridgeHandler {
     }
 
     public String getUsername() {
-        return getConfigAs(SectorAlarmBridgeConfiguration.class).username;
+        return getConfigAs(SectorAlarmBridgeConfiguration.class).email;
     }
 
     public String getPassword() {

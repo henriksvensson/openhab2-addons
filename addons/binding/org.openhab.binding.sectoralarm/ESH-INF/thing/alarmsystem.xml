@@ -28,7 +28,6 @@
             </parameter>
 
             <parameter name="alarmSystemCode" type="text" required="true" readOnly="false" multiple="false">
-                <context>alarmSystemCode</context>
                 <required>true</required>
                 <default></default>
                 <label>Alarm System Code</label>
@@ -40,7 +39,6 @@
             </parameter>
 
             <parameter name="baseUrl" type="text" required="true" readOnly="false" multiple="false">
-                <context>baseUrl</context>
                 <required>true</required>
                 <default>https://minasidor.sectoralarm.se</default>
                 <label>Base URL</label>
