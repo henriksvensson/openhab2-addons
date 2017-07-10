@@ -50,8 +50,6 @@ public class SectorAlarmBridgeHandler extends BaseBridgeHandler {
 
     @Override
     public void initialize() {
-        SectorAlarmBridgeConfiguration conf = getConfigAs(SectorAlarmBridgeConfiguration.class);
-
         // TODO: Initialize the thing. If done set status to ONLINE to indicate proper working.
         // Long running initialization should be done asynchronously in background.
         updateStatus(ThingStatus.ONLINE);
@@ -76,4 +74,19 @@ public class SectorAlarmBridgeHandler extends BaseBridgeHandler {
         super.childHandlerDisposed(childHandler, childThing);
     }
 
+    public String getUsername() {
+        return getConfigAs(SectorAlarmBridgeConfiguration.class).username;
+    }
+
+    public String getPassword() {
+        return getConfigAs(SectorAlarmBridgeConfiguration.class).password;
+    }
+
+    public String getAlarmSystemCode() {
+        return getConfigAs(SectorAlarmBridgeConfiguration.class).alarmSystemCode;
+    }
+
+    public String getBaseUrl() {
+        return getConfigAs(SectorAlarmBridgeConfiguration.class).baseUrl;
+    }
 }

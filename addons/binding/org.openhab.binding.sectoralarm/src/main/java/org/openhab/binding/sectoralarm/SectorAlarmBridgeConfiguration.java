@@ -17,5 +17,6 @@ package org.openhab.binding.sectoralarm;
 public class SectorAlarmBridgeConfiguration {
     public String username;
     public String password;
+    public String alarmSystemCode;
     public String baseUrl;
 }

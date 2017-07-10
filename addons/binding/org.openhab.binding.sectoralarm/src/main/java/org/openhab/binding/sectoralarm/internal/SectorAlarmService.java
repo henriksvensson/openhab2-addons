@@ -18,6 +18,8 @@ import org.slf4j.LoggerFactory;
  */
 public class SectorAlarmService {
 
+    private final Logger logger = LoggerFactory.getLogger(SectorAlarmService.class);
+
     // static String logOnPageUrl = "https://minasidor.sectoralarm.se/Users/Account/LogOn";
     // static String alarmSystemBaseUrl = "https://minasidor.sectoralarm.se/MyPages/Panel/AlarmSystem/";
 
@@ -27,22 +29,28 @@ public class SectorAlarmService {
 
     static int timeout = 10000; // milliseconds
 
-    private final Logger logger = LoggerFactory.getLogger(SectorAlarmService.class);
+    private String username;
+    private String password;
+    private String alarmSystemCode;
+    private String baseUrl;
+
+    public SectorAlarmService(String username, String password, String alarmSystemCode, String baseUrl) {
+        this.username = username;
+        this.password = password;
+        this.alarmSystemCode = alarmSystemCode;
+        this.baseUrl = baseUrl;
+    }
 
     public void main(String[] args) {
 
         // System.err.println("Usage: java -jar sectoralarmscraper.jar <user name> <password> <alarm system code>");
-
-        String userName = args[0];
-        String password = args[1];
-        String alarmSystemCode = args[2];
 
         String alarmSystemUrl = alarmSystemBaseUrl + alarmSystemCode + "?ethernetStatus=online&locksAvailable=False";
 
         try {
             Response r = Jsoup.connect(logOnPageUrl).timeout(timeout).execute();
 
-            Response response = Jsoup.connect(logOnPageUrl + "?Returnurl=~%2F").data("userNameOrEmail", userName)
+            Response response = Jsoup.connect(logOnPageUrl + "?Returnurl=~%2F").data("userNameOrEmail", username)
                     .data("password", password).cookies(r.cookies()).method(Method.POST).timeout(timeout).execute();
 
             Document doc = Jsoup.connect(alarmSystemUrl).cookies(response.cookies()).timeout(timeout).get();
@@ -61,4 +69,27 @@ public class SectorAlarmService {
 
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getBaseUrl() {
+        return baseUrl;
+    }
+
+    public void setBaseUrl(String baseUrl) {
+        this.baseUrl = baseUrl;
+    }
 }

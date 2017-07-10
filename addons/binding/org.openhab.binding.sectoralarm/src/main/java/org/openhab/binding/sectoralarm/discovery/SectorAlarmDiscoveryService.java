@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2010-2017 by the respective copyright holders.
- *
+ * <p>
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -20,6 +20,7 @@ import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import org.eclipse.smarthome.core.thing.ThingUID;
 import org.openhab.binding.sectoralarm.SectorAlarmBindingConstants;
 import org.openhab.binding.sectoralarm.handler.SectorAlarmBridgeHandler;
+import org.openhab.binding.sectoralarm.internal.SectorAlarmService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,17 +33,24 @@ import org.slf4j.LoggerFactory;
 public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
     private static final long DEFAULT_TTL = 60 * 60; // 1 Hour
 
+    private final Logger logger = LoggerFactory.getLogger(SectorAlarmDiscoveryService.class);
+
+    private List<SectorAlarmBridgeHandler> bridgeHandlers = new Vector<>();
+
+    private SectorAlarmService sectorAlarmService;
+
     public SectorAlarmDiscoveryService(int timeout) throws IllegalArgumentException {
         super(timeout);
     }
 
-    private final Logger logger = LoggerFactory.getLogger(SectorAlarmDiscoveryService.class);
-
-    private List<SectorAlarmBridgeHandler> bridgeHandlers = new Vector<SectorAlarmBridgeHandler>();
-
     public SectorAlarmDiscoveryService(SectorAlarmBridgeHandler bridgeHandler) {
         super(SectorAlarmBindingConstants.SUPPORTED_THING_TYPES_UIDS, 10, true);
         this.bridgeHandlers.add(bridgeHandler);
+        sectorAlarmService = new SectorAlarmService(
+                bridgeHandler.getUsername(),
+                bridgeHandler.getPassword(),
+                bridgeHandler.getAlarmSystemCode(),
+                bridgeHandler.getBaseUrl());
     }
 
     public void activate() {
@@ -62,7 +70,7 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
 
     public void addBridgeHandler(SectorAlarmBridgeHandler bridgeHandler) {
         logger.debug("*** addBridgeHandler");
-        // bridgeHandlers.add(bridgeHandler);
+        bridgeHandlers.add(bridgeHandler);
         // bridgeHandler.registerDeviceStatusListener(this);
     }
 
@@ -91,6 +99,22 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
                 logger.warn("Discovered unsupported Sector Alarm device.");
             }
         }
+    }
+
+    @Override
+    public boolean isBackgroundDiscoveryEnabled() {
+        logger.debug("*** isBackgroundDiscoveryEnabled");
+        return true;
+    }
+
+    @Override
+    public void startBackgroundDiscovery() {
+        logger.debug("*** startBackgroundDiscovery");
+    }
+
+    @Override
+    public void stopBackgroundDiscovery() {
+        logger.debug("*** stopBackgroundDiscovery");
     }
 
 }

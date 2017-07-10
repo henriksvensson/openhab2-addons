@@ -1,57 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <thing:thing-descriptions bindingId="sectoralarm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
-	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+                          xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+                          xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
 
-	<bridge-type id="alarmsystem">
-		<label>SectorAlarm Alarm System</label>
-		<description>A specific alarm system (i.e. "Home").</description>
-		<channels>
-			<channel id="timestamp" typeId="timestamp" />
-			<channel id="alarmstate" typeId="alarmstate" />
-		</channels>
-		<config-description>
-			<parameter name="email" type="text" required="true" readOnly="false" multiple="false">
-				<context>email</context>
-				<required>true</required>
-				<default></default>
-				<label>Email</label>
-				<description>The email address used to log in to the SectorAlarm site.</description>
-			</parameter>
+    <bridge-type id="alarmsystem">
+        <label>SectorAlarm Alarm System</label>
+        <description>A specific alarm system (i.e. "Home").</description>
+        <channels>
+            <channel id="timestamp" typeId="timestamp"/>
+            <channel id="alarmstate" typeId="alarmstate"/>
+        </channels>
+        <config-description>
+            <parameter name="email" type="text" required="true" readOnly="false" multiple="false">
+                <context>email</context>
+                <required>true</required>
+                <default></default>
+                <label>Email</label>
+                <description>The email address used to log in to the SectorAlarm site.</description>
+            </parameter>
 
-			<parameter name="password" type="text" required="true" readOnly="false" multiple="false">
-				<context>password</context>
-				<required>true</required>
-				<default></default>
-				<label>Password</label>
-				<description>The password used to log in to the SectorAlarm site.</description>
-			</parameter>
+            <parameter name="password" type="text" required="true" readOnly="false" multiple="false">
+                <context>password</context>
+                <required>true</required>
+                <default></default>
+                <label>Password</label>
+                <description>The password used to log in to the SectorAlarm site.</description>
+            </parameter>
 
-			<parameter name="baseUrl" type="text" required="true" readOnly="false" multiple="false">
-				<context>baseUrl</context>
-				<required>true</required>
-				<default>https://minasidor.sectoralarm.se</default>
-				<label>Base URL</label>
-				<description>The base URL for accessing the SectorAlarm site.</description>
-			</parameter>
-		</config-description>
-	</bridge-type>
+            <parameter name="alarmSystemCode" type="text" required="true" readOnly="false" multiple="false">
+                <context>alarmSystemCode</context>
+                <required>true</required>
+                <default></default>
+                <label>Alarm System Code</label>
+                <description>
+                    The Alarm System Code uniquely identifies an alarm system on the SectorAlarm site. It
+                    is possible to have multiple alarm systems on the same SectorAlarm account (for example Home and
+                    Summer House). These are identified with separate Alarm System Codes.
+                </description>
+            </parameter>
 
-	<channel-type id="alarmstate">
-		<item-type>Number</item-type>
-		<label>Actual alarm state</label>
-		<description>The alarm state is either "Armed", "Partially armed" or "Disarmed"</description>
-		<category>Alarm</category>
-		<state readOnly="false">
-		</state>
-	</channel-type>
+            <parameter name="baseUrl" type="text" required="true" readOnly="false" multiple="false">
+                <context>baseUrl</context>
+                <required>true</required>
+                <default>https://minasidor.sectoralarm.se</default>
+                <label>Base URL</label>
+                <description>The base URL for accessing the SectorAlarm site.</description>
+            </parameter>
+        </config-description>
+    </bridge-type>
 
-	<channel-type id="timestamp">
-		<item-type>DateTime</item-type>
-		<label>Last alarm state update</label>
-		<description>Last alarm state update</description>
-		<state readOnly="true">
-		</state>
-	</channel-type>
+    <channel-type id="alarmstate">
+        <item-type>Number</item-type>
+        <label>Actual alarm state</label>
+        <description>The alarm state is either "Armed", "Partially armed" or "Disarmed"</description>
+        <category>Alarm</category>
+        <state readOnly="false">
+        </state>
+    </channel-type>
+
+    <channel-type id="timestamp">
+        <item-type>DateTime</item-type>
+        <label>Last alarm state update</label>
+        <description>Last alarm state update</description>
+        <state readOnly="true">
+        </state>
+    </channel-type>
 
 </thing:thing-descriptions>
