@@ -1,0 +1,21 @@
+{
+  "id" : "af1e65a4-7029-368c-8896-3472f8e788b3",
+  "request" : {
+    "url" : "/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-(root)-pD5pW.txt",
+    "headers" : {
+      "Cache-Control" : "private, s-maxage=0,no-cache",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Server" : "Microsoft-IIS/10.0",
+      "X-AspNetMvc-Version" : "5.2",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "Date" : "Tue, 11 Jul 2017 19:51:22 GMT"
+    }
+  },
+  "uuid" : "af1e65a4-7029-368c-8896-3472f8e788b3"
+}

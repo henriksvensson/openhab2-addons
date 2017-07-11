@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html ng-controller="menuController">
+    <head>
+        <title>Sector Alarm</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/Content/assets/images/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/Content/assets/images/favicons/apple-touch-icon-120x120.png" />
+        <link rel="icon" type="image/png" href="/Content/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/Content/assets/images/favicons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="/Content/assets/images/favicons/mstile-144x144.png" />
+
+        <script src="/Scripts/jquery.min.js"></script>
+        <link href="/Content/sass/main.css?v1_1_51" rel="stylesheet" />
+        <script src="/Scripts/main.js?v1_1_51"></script>
+        
+    </head>
+    <body ng-class="{'no-scroll': route.current.noBodyScroll }">
+        <ng-include src="'Views/AngularTemplates/Templates/svg-icons.html'"></ng-include>
+        <ng-include src="'Views/AngularTemplates/Templates/_header.html'"></ng-include>
+        <script type="text/javascript">
+   var prefLang='sv';
+</script>
+
+        <main>
+            <div ng-view></div>
+        </main>
+        <ng-include ng-hide="route.current.menu === 'hide'" src="'Views/AngularTemplates/Templates/customer-support.html'"></ng-include>
+
+        <footer class="footer">
+            2017 © Sector Alarm | <a target="_blank" href="/User/Terms/{{userInfo.language}}">{{ "User terms and cookies" | translate }}</a>
+        </footer>
+
+    </body>
+</html>
+

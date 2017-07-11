@@ -1,0 +1,44 @@
+[
+  {
+    "Id": null,
+    "Label": "nv gastrum",
+    "SerialNo": "24600344C07",
+    "Temprature": "22",
+    "DeviceId": null
+  },
+  {
+    "Id": null,
+    "Label": "nv v-rum",
+    "SerialNo": "24200344C0D",
+    "Temprature": "23",
+    "DeviceId": null
+  },
+  {
+    "Id": null,
+    "Label": "nv kok",
+    "SerialNo": "24400344872",
+    "Temprature": "24",
+    "DeviceId": null
+  },
+  {
+    "Id": null,
+    "Label": "nv uppe",
+    "SerialNo": "24400344B6A",
+    "Temprature": "23",
+    "DeviceId": null
+  },
+  {
+    "Id": null,
+    "Label": "nv garage",
+    "SerialNo": "24600344B4E",
+    "Temprature": "23",
+    "DeviceId": null
+  },
+  {
+    "Id": null,
+    "Label": "ir tvattstug",
+    "SerialNo": "0D200304921",
+    "Temprature": "26",
+    "DeviceId": null
+  }
+]

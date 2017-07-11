@@ -58,8 +58,8 @@
 
     <channel-type id="timestamp">
         <item-type>DateTime</item-type>
-        <label>Last alarm state update</label>
-        <description>Last alarm state update</description>
+        <label>Last update</label>
+        <description>The last time there was a successful state update.</description>
         <state readOnly="true">
         </state>
     </channel-type>

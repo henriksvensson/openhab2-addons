@@ -1,0 +1,24 @@
+{
+  "id" : "65fd50bb-dd58-3fdc-aa05-dca3307a6280",
+  "request" : {
+    "url" : "/Panel/GetTempratures/02658648",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-GetTempratures-02658648-gCYO3.json",
+    "headers" : {
+      "Cache-Control" : "public, max-age=900, s-maxage=0,no-cache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Expires" : "Tue, 11 Jul 2017 20:06:42 GMT",
+      "Last-Modified" : "Tue, 11 Jul 2017 19:51:42 GMT",
+      "Vary" : "*",
+      "Server" : "Microsoft-IIS/10.0",
+      "X-AspNetMvc-Version" : "5.2",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "Date" : "Tue, 11 Jul 2017 19:51:45 GMT"
+    }
+  },
+  "uuid" : "65fd50bb-dd58-3fdc-aa05-dca3307a6280"
+}

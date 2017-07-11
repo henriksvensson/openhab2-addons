@@ -1,0 +1,27 @@
+{
+  "id" : "1ceaa4c5-b4e9-3824-98f7-ccea33e27b80",
+  "request" : {
+    "url" : "/Panel/GetOverview",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalTo" : "PanelId=02658648"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-Panel-GetOverview-MNf9n.json",
+    "headers" : {
+      "Cache-Control" : "public, max-age=5, s-maxage=0,no-cache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Expires" : "Tue, 11 Jul 2017 19:51:32 GMT",
+      "Last-Modified" : "Tue, 11 Jul 2017 19:51:27 GMT",
+      "Vary" : "*",
+      "Server" : "Microsoft-IIS/10.0",
+      "X-AspNetMvc-Version" : "5.2",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "Date" : "Tue, 11 Jul 2017 19:51:29 GMT"
+    }
+  },
+  "uuid" : "1ceaa4c5-b4e9-3824-98f7-ccea33e27b80"
+}

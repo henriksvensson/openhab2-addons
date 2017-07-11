@@ -47,11 +47,8 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
     public SectorAlarmDiscoveryService(SectorAlarmBridgeHandler bridgeHandler) {
         super(SectorAlarmBindingConstants.SUPPORTED_THING_TYPES_UIDS, 10, true);
         this.bridgeHandlers.add(bridgeHandler);
-        sectorAlarmService = new SectorAlarmService(
-                bridgeHandler.getUsername(),
-                bridgeHandler.getPassword(),
-                bridgeHandler.getAlarmSystemCode(),
-                bridgeHandler.getBaseUrl());
+        sectorAlarmService = new SectorAlarmService(bridgeHandler.getUsername(), bridgeHandler.getPassword(),
+                bridgeHandler.getAlarmSystemCode(), bridgeHandler.getBaseUrl());
     }
 
     public void activate() {
@@ -85,15 +82,15 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
     protected void startScan() {
         logger.debug("Scanning for SectorAlarm things.");
         for (SectorAlarmBridgeHandler bridgeHandler : bridgeHandlers) {
-            AlarmSystem alarmSystem = sectorAlarmService.getAlarmSystem();
+            AlarmSystem alarmSystem = sectorAlarmService.getAlarmSystem(true);
 
             for (Temperature temperature : alarmSystem.temperatures) {
-                ThingUID thingUID = new ThingUID(SectorAlarmBindingConstants.THING_TYPE_THERMOMETER, temperature.serialNo);
+                ThingUID thingUID = new ThingUID(SectorAlarmBindingConstants.THING_TYPE_THERMOMETER,
+                        temperature.serialNo);
 
                 DiscoveryResult discoveryResult = DiscoveryResultBuilder.create(thingUID).withTTL(DEFAULT_TTL)
                         // .withProperty(TellstickBindingConstants.DEVICE_ID, device.getUUId())
-                        .withBridge(bridgeHandler.getThing().getBridgeUID())
-                        .withLabel(temperature.label).build();
+                        .withBridge(bridgeHandler.getThing().getBridgeUID()).withLabel(temperature.label).build();
                 thingDiscovered(discoveryResult);
             }
         }

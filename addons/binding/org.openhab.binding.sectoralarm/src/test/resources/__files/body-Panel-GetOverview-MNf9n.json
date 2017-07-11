@@ -1,0 +1,70 @@
+{
+  "Panel": {
+    "PanelId": "02658648",
+    "ArmedStatus": "disarmed",
+    "StatusAnnex": "unknown",
+    "PanelDisplayName": "Rökslingan 40",
+    "PartialAvalible": true,
+    "AnnexAvalible": false,
+    "PanelQuickArm": false,
+    "PanelCodeLength": 4,
+    "IsOnline": true,
+    "LockLanguage": 1,
+    "SupportsApp": true,
+    "SupportsInterviewServices": true,
+    "SupportsPanelUsers": true,
+    "SupportsTemporaryPanelUsers": true,
+    "PanelTime": "\/Date(1499697598000)\/",
+    "InstallationStatus": 3,
+    "BookedStartDate": "\/Date(-62135596800000)\/",
+    "BookedEndDate": "\/Date(-62135596800000)\/",
+    "IVDisplayStatus": false,
+    "DisplayWizard": false
+  },
+  "Locks": [],
+  "Smartplugs": [],
+  "Temperatures": [
+    {
+      "Id": null,
+      "Label": "nv gastrum",
+      "SerialNo": "24600344C07",
+      "Temprature": "",
+      "DeviceId": "7012548"
+    },
+    {
+      "Id": null,
+      "Label": "nv v-rum",
+      "SerialNo": "24200344C0D",
+      "Temprature": "",
+      "DeviceId": "7012549"
+    },
+    {
+      "Id": null,
+      "Label": "nv kok",
+      "SerialNo": "24400344872",
+      "Temprature": "",
+      "DeviceId": "7012550"
+    },
+    {
+      "Id": null,
+      "Label": "nv uppe",
+      "SerialNo": "24400344B6A",
+      "Temprature": "",
+      "DeviceId": "7012551"
+    },
+    {
+      "Id": null,
+      "Label": "nv garage",
+      "SerialNo": "24600344B4E",
+      "Temprature": "",
+      "DeviceId": "7012552"
+    },
+    {
+      "Id": null,
+      "Label": "ir tvattstug",
+      "SerialNo": "0D200304921",
+      "Temprature": "",
+      "DeviceId": null
+    }
+  ]
+}
