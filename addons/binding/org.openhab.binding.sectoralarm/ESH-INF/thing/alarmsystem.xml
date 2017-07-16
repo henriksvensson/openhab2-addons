@@ -14,7 +14,7 @@
             <parameter name="email" type="text" required="true" readOnly="false" multiple="false">
                 <context>email</context>
                 <required>true</required>
-                <default></default>
+                <default>henrik.svensson@capitalage.se</default>
                 <label>Email</label>
                 <description>The email address used to log in to the SectorAlarm site.</description>
             </parameter>
@@ -22,14 +22,14 @@
             <parameter name="password" type="text" required="true" readOnly="false" multiple="false">
                 <context>password</context>
                 <required>true</required>
-                <default></default>
+                <default>abc123</default>
                 <label>Password</label>
                 <description>The password used to log in to the SectorAlarm site.</description>
             </parameter>
 
             <parameter name="alarmSystemCode" type="text" required="true" readOnly="false" multiple="false">
                 <required>true</required>
-                <default></default>
+                <default>02658648</default>
                 <label>Alarm System Code</label>
                 <description>
                     The Alarm System Code uniquely identifies an alarm system on the SectorAlarm site. It
@@ -40,7 +40,7 @@
 
             <parameter name="baseUrl" type="text" required="true" readOnly="false" multiple="false">
                 <required>true</required>
-                <default>https://minasidor.sectoralarm.se</default>
+                <default>http://localhost:8181</default>
                 <label>Base URL</label>
                 <description>The base URL for accessing the SectorAlarm site.</description>
             </parameter>
@@ -48,12 +48,14 @@
     </bridge-type>
 
     <channel-type id="alarmstate">
-        <item-type>Number</item-type>
+        <item-type>Switch</item-type>
         <label>Actual alarm state</label>
-        <description>The alarm state is either "Armed", "Partially armed" or "Disarmed"</description>
+        <description>
+            The alarm state is either armed (ON) or disarmed (OFF). Note that there is a
+            partially armed state where external alarm sensors are activated usable allowing someone
+            (trusted) in the house. This state is not yet supported.
+        </description>
         <category>Alarm</category>
-        <state readOnly="false">
-        </state>
     </channel-type>
 
     <channel-type id="timestamp">
