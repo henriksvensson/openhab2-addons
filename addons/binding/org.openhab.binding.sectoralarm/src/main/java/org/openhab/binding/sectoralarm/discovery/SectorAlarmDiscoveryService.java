@@ -8,6 +8,10 @@
  */
 package org.openhab.binding.sectoralarm.discovery;
 
+import java.util.List;
+import java.util.Set;
+import java.util.Vector;
+
 import org.eclipse.smarthome.config.discovery.AbstractDiscoveryService;
 import org.eclipse.smarthome.config.discovery.DiscoveryResult;
 import org.eclipse.smarthome.config.discovery.DiscoveryResultBuilder;
@@ -20,10 +24,6 @@ import org.openhab.binding.sectoralarm.internal.model.AlarmSystem;
 import org.openhab.binding.sectoralarm.internal.model.Temperature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.List;
-import java.util.Set;
-import java.util.Vector;
 
 /**
  * Discovery Service class for {@link SectorAlarmBridgeHandler} used to discover
@@ -74,8 +74,7 @@ public class SectorAlarmDiscoveryService extends AbstractDiscoveryService {
 
     @Override
     public Set<ThingTypeUID> getSupportedThingTypes() {
-        logger.debug("*** getSupportedThingTypes");
-        return SectorAlarmBindingConstants.SUPPORTED_THING_TYPES_UIDS;
+        return SectorAlarmBindingConstants.DISCOVERABLE_THING_TYPES_UIDS;
     }
 
     @Override

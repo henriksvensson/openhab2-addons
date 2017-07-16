@@ -36,4 +36,7 @@ public class SectorAlarmBindingConstants {
     public static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Stream
             .of(THING_TYPE_THERMOMETER, THING_TYPE_ALARM_SYSTEM).collect(Collectors.toSet());
 
+    public static final Set<ThingTypeUID> DISCOVERABLE_THING_TYPES_UIDS = Stream.of(THING_TYPE_THERMOMETER)
+            .collect(Collectors.toSet());
+
 }
